@@ -3,8 +3,8 @@
   contents:
     - name: Full Name
       value: Zirui Chen
-    - name: Date of Birth
-      value: 4th April 2000
+    # - name: Date of Birth
+    #   value: 4th April 2000
     - name: Languages
       value: Chinese, English
 
