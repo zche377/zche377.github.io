@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our lab is going to lead a tutorial session at <a href='https://2023.ccneuro.org'>Cognitive Computational Neuronscience 2023 (CCN 2023)</a>. Check out our <a href='https://bonnerlab.github.io/ccn-tutorial/'>website</a> for the tutorial!
+Our lab lead a tutorial session at <a href='https://2023.ccneuro.org'>Cognitive Computational Neuronscience 2023 (CCN 2023)</a>. Check out our <a href='https://bonnerlab.github.io/ccn-tutorial/'>website</a> for the tutorial!
