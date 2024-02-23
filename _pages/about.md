@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a  1st year PhD student working with Dr. Michael Bonner. Broadly, I am interested in the intersection between human cognition and artificial intelligence. My present work investigates the statistical principles that unify the visual representations in human and artificial visual systems.
+I am a 1st year PhD student working with Dr. Michael Bonner. Broadly, I am interested in the intersection between human cognition and artificial intelligence. My present work investigates the statistical learning principles that unify the visual representation in human and artificial visual systems.
 
 Prior to JHU, I received my bachelor's degree from the Emory University. I worked as a research assistant with Dr. Daniel Dilks on low-level visual features relevent to human visual scene processing.
 
