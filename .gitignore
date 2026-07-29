@@ -9,3 +9,7 @@ _site
 Gemfile.lock
 vendor
 
+# LaTeX build artifacts for the CV (assets/cv/cv.tex is the source; the built
+# PDF is installed to assets/pdf/cv_ziruichen.pdf and IS committed).
+assets/cv/build/
+
