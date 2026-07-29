@@ -1,0 +1,159 @@
+% Zirui (Ray) Chen — CV
+% Single source of truth for assets/pdf/cv_ziruichen.pdf. Build with `make`.
+% Reproduces the look of the previous Word-exported CV: Helvetica body,
+% ruled small-caps-free section heads, right-aligned years, serif running header.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+
+% Helvetica (URW Nimbus Sans) as the default family, matching the original export.
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[margin=0.85in,top=0.9in,bottom=0.8in]{geometry}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagenumbering{arabic}
+
+% Match the Word original's typography: ragged right, no hyphenation, single
+% sentence spacing. Without these, LaTeX justifies and hyphenates by default,
+% which reads visibly differently from the previous export.
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+% Keep a citation from splitting across the page break.
+\widowpenalty=10000
+\clubpenalty=10000
+
+% --- Running header: serif, as in the original (page 1 is bare) -----------------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{\rmfamily\footnotesize Zirui Chen}
+\fancyhead[R]{\rmfamily\footnotesize\thepage}
+
+% --- Section heads: regular weight, ruled underneath ---------------------------
+\titleformat{\section}
+  {\normalfont\large}{}{0pt}{\MakeUppercase}
+  [\vspace{-8pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+% --- Helpers -------------------------------------------------------------------
+% Institution / role line with a right-aligned year.
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\par}
+% Citation with a hanging indent, as in the original.
+\newcommand{\cit}[1]{\begingroup\hangindent=0.32in\hangafter=1 #1\par\endgroup\vspace{3pt}}
+% Run-in bold label for the coursework / skills blocks.
+\newcommand{\runin}[1]{\textbf{#1}\ }
+
+\begin{document}
+\thispagestyle{empty}
+
+% --- Masthead ------------------------------------------------------------------
+{\fontsize{22}{26}\selectfont Zirui (Ray) Chen\par}
+\vspace{6pt}
+Krieger Hall 107, 3400 N Charles St.\hfill Email: \href{mailto:zchen160@jh.edu}{zchen160@jh.edu}\par
+Baltimore, MD 21218\par
+
+% --- Education -----------------------------------------------------------------
+\section{Education}
+\entry{Johns Hopkins University}{2023-present}
+Ph.D. Cognitive Science\par
+Advisor: Michael F. Bonner\par
+\vspace{8pt}
+
+\entry{Johns Hopkins University}{2022-2023}
+M.A. Cognitive Science\par
+Advisor: Michael F. Bonner\par
+\vspace{8pt}
+
+\entry{Emory University}{2018-2022}
+B.S. Neuroscience \& Behavioral Biology, B.A. Computer Science (GPA=3.94)\par
+\textit{Summa cum laude}\par
+Honors thesis: The global color of a scene is relevant for human visual scene discrimination.\par
+Advisor: Daniel D. Dilks\par
+
+% --- Publications --------------------------------------------------------------
+\section{Publications}
+\cit{\textbf{Chen, Z.}, Isik, L., \& Bonner, M.F. (2026). \href{https://doi.org/10.64898/2026.04.27.720701}{Multidimensional dynamics of object representations in the human visual system}. \textit{bioRxiv}.}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2025). \href{https://doi.org/10.1126/sciadv.adw7697}{Universal dimensions of visual representation}. \textit{Science Advances}, 11, eadw7697.}
+\cit{Cheng, A., \textbf{Chen, Z.}, \& Dilks, D. D. (2023). \href{https://doi.org/10.1016/j.neuroimage.2023.119935}{A stimulus-driven approach reveals vertical luminance gradient as a stimulus feature that drives human cortical scene selectivity}. \textit{NeuroImage}, 269, 119935.}
+
+% --- Talks ---------------------------------------------------------------------
+\section{Talk Presentations}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2023), Canonical Dimensions of Neural Visual Representation. \textit{Annual Meeting of the Vision Sciences Society 2023}.}
+\cit{\textbf{Chen, Z.}, Cheng, A., \& Dilks, D.D. (2020), Characterizing an image property relevant for human cortical scene processing. \textit{Summer Undergraduate Research Experience (SURE) Virtual Symposium 2020}.}
+
+% --- Posters -------------------------------------------------------------------
+\section{Poster Presentations}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2026), Revealing core representational axes of neural networks through learning dynamics and brain alignment. \textit{Conference on Cognitive Computational Neuroscience 2026}.}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2026), Learning dynamics reveal the natural basis of visual representation. \textit{Annual Meeting of the Vision Sciences Society 2026}.}
+\cit{\textbf{Chen, Z.}, Isik, L., \& Bonner, M.F. (2025), Neural Dimensionality and Temporal Dynamics of Visual Representations. \textit{Conference on Cognitive Computational Neuroscience 2025}.}
+\cit{\textbf{Chen, Z.}, Isik, L., \& Bonner, M.F. (2025), Unraveling the geometry of neural representational dynamics in rapid visual processing. \textit{Annual Meeting of the Vision Sciences Society 2025}.}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2024), Accounting for the reliability of deep neural networks in representational modeling. \textit{Conference on Cognitive Computational Neuroscience 2024}.}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2024), How to estimate noise ceilings for computational models of visual cortex. \textit{Annual Meeting of the Vision Sciences Society 2024}.}
+\cit{\textbf{Chen, Z.}, \& Bonner, M.F. (2023), Canonical Dimensions of Vision. \textit{Conference of Cognitive Computational Neuroscience 2023}.}
+\cit{Elmoznino, E., \textbf{Chen, Z.}, \& Bonner, M.F. (2022), Latent dimensionality scales with the performance of deep learning models of visual cortex. \textit{Conference of Cognitive Computational Neuroscience 2022}.}
+\cit{\textbf{Chen, Z.}, Cheng, A., \& Dilks, D.D. (2021), Uncovering the visual features relevant to human visual scene discrimination. \textit{Summer Undergraduate Research Experience (SURE) Virtual Symposium 2021}.}
+
+% --- Coursework ----------------------------------------------------------------
+\section{Relevant Coursework}
+\runin{Computer Science:} Analysis of Algorithms; Artificial Intelligence; Computational Linguistics; Data Structure and Algorithms; Machine Learning.\par
+\vspace{4pt}
+\runin{Mathematics:} Differential Equations; Linear Algebra; Linear Optimization; Nonlinear Optimization; Multivariable Calculus; Numerical Analysis; Real Analysis.\par
+\vspace{4pt}
+\runin{Psychology/Neuroscience/Cognitive Science:} Bayesian Inference; Behavioral Neuroscience; Brain Imaging; Cognition; Foundations of Cognitive Science; Neurobiology; Neuroeconomics: Decision Making; Perspectives in Neuroscience \& Behavior; Predictive Modeling; Theory and Modeling of Information Coding in Neural Activity.\par
+
+% --- Skills --------------------------------------------------------------------
+\section{Skills}
+\runin{Programming languages:} Python, MATLAB, R, Java, Bash, C, JavaScript, HTML/CSS, Swift.\par
+\vspace{4pt}
+\runin{Methods and tools:} Machine learning, deep learning, fMRI pre-processing (FSL, fMRIPrep), image processing, experiment interface design (Psychtoolbox, MTurk, Prolific).\par
+
+% --- Teaching ------------------------------------------------------------------
+\section{Teaching Experience}
+\entry{Teaching Assistant, Johns Hopkins University}{2026}
+Course: Cognitive Principles of Artificial Intelligence\par
+Professor: Jennifer Hu\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Johns Hopkins University}{2025}
+Course: Introduction to Cognitive Neuropsychology\par
+Professor: Michael McCloskey\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Johns Hopkins University}{2025}
+Course: Neuroscience: Cognitive\par
+Professor: Michael F. Bonner\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Johns Hopkins University}{2024}
+Course: Deep Learning for Cognitive Neuroscience\par
+Professor: Leyla Isik\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Johns Hopkins University}{2023}
+Course: Probabilistic Models of the Visual Cortex\par
+Professor: Alan Yuille\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Emory University}{2021}
+Course: Non-Linear Optimization\par
+Professor: Elizabeth Newman\par
+\vspace{8pt}
+
+\entry{Teaching Assistant, Emory University}{2021}
+Course: Computer Architecture/Machine Level Programming\par
+Professor: Shun Cheung\par
+
+\end{document}

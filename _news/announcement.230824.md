@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented a poster on <a href='https://2023.ccneuro.org/view_paper5c9b.html?PaperNum=1588'>Canonical dimensions of vision</a> at the conference of <a href='https://2024.ccneuro.org'>CCN 2023</a>.
+I presented a poster on <a href='https://2023.ccneuro.org/view_paper5c9b.html?PaperNum=1588'>Canonical dimensions of vision</a> at the conference of <a href='https://2023.ccneuro.org'>CCN 2023</a>.

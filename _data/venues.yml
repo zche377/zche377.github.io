@@ -1,6 +1,13 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Sci Adv":
+  url: https://www.science.org/journal/sciadv
+  color: "#b1252a"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"bioRxiv":
+  url: https://www.biorxiv.org
+  color: "#be2635"
+
+# NOTE: key must match the `abbr` field in _bibliography/papers.bib byte-for-byte
+# (lowercase "i" in "Neuroimage"), or the badge silently renders unstyled.
+"Neuroimage":
+  url: https://www.sciencedirect.com/journal/neuroimage
+  color: "#e87722"
